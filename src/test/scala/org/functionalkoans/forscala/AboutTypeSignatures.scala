@@ -95,8 +95,8 @@ class AboutTypeSignatures extends KoanSuite {
   }
 
   koan("null.asInstanceOf[className] can be used to generate basic default values") {
-    null.asInstanceOf[String] should be("null")
+    null.asInstanceOf[String] should be(null)
     null.asInstanceOf[Int] should be(0)
-    null.asInstanceOf[Short] should be(Short.box(0))
+    null.asInstanceOf[Short] should be(0)
   }
 }
